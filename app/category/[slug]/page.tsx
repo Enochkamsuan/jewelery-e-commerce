@@ -65,7 +65,7 @@ export default function CategoryPage({ params }: { params: Promise<{ slug: strin
     <div className="min-h-screen bg-background">
       <Header />
       
-      <main className="pt-32 pb-20">
+      <main className="pt-10 lg:pt-32 lg:pb-20">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm font-sans text-muted-foreground mb-8">
