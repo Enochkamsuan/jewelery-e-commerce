@@ -74,13 +74,13 @@ export function VendorShowcase() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-sm font-sans tracking-[0.3em] uppercase text-muted-foreground mb-4">
+          <p className="text-caption text-muted-foreground mb-4 tracking-[0.3em]">
             Our Artisans
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
+          <h2 className="text-headline mb-6">
             Meet the Makers
           </h2>
-          <p className="text-lg font-sans text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
             Discover exceptional jewelry from master craftsmen around the world, each bringing centuries of tradition to their craft.
           </p>
         </div>
@@ -104,25 +104,25 @@ export function VendorShowcase() {
                 )}
               </div>
 
-              <h3 className="text-xl font-medium mb-2 group-hover:text-primary transition-colors">
+              <h3 className="font-serif text-xl font-medium mb-2 group-hover:text-primary transition-colors">
                 {vendor.name}
               </h3>
 
-              <div className="flex items-center gap-1 text-sm font-sans text-muted-foreground mb-3">
+              <div className="flex items-center gap-1 text-body-sm text-muted-foreground mb-3">
                 <MapPin className="h-3 w-3" />
                 {vendor.location}
               </div>
 
-              <p className="text-sm font-sans text-muted-foreground mb-4">
+              <p className="text-body-sm text-muted-foreground mb-4">
                 Specializing in {vendor.specialty}
               </p>
 
               <div className="flex items-center justify-between pt-4 border-t border-border">
                 <div className="flex items-center gap-1">
                   <Star className="h-4 w-4 fill-primary text-primary" />
-                  <span className="text-sm font-sans font-medium">{vendor.rating}</span>
+                  <span className="text-body-sm font-medium">{vendor.rating}</span>
                 </div>
-                <span className="text-xs font-sans text-muted-foreground">
+                <span className="text-caption text-muted-foreground">
                   {vendor.products} products
                 </span>
               </div>
@@ -132,7 +132,7 @@ export function VendorShowcase() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button asChild variant="outline" size="lg" className="group font-sans tracking-wider uppercase text-sm px-8 py-6">
+          <Button asChild variant="outline" size="lg" className="group text-caption px-8 py-6">
             <Link href="/vendors">
               View All Vendors
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

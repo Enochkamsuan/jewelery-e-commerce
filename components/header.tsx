@@ -28,7 +28,7 @@ export function Header() {
       {/* Top bar */}
       <div className="border-b border-border/50">
         <div className="container mx-auto px-4 py-2">
-          <p className="text-center text-xs tracking-widest text-muted-foreground font-sans uppercase">
+          <p className="text-center text-caption text-muted-foreground">
             Complimentary shipping on orders over $500
           </p>
         </div>
@@ -71,9 +71,9 @@ export function Header() {
 
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
-              <h1 className="text-2xl md:text-3xl font-semibold tracking-wider">
-                Lumière
-              </h1>
+              <span className="font-serif text-2xl md:text-3xl font-semibold tracking-wider">
+                Lumiere
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -82,7 +82,7 @@ export function Header() {
                 <Link
                   key={category.name}
                   href={category.href}
-                  className="text-sm font-sans tracking-widest uppercase hover:text-primary transition-colors"
+                  className="text-caption hover:text-primary transition-colors"
                 >
                   {category.name}
                 </Link>

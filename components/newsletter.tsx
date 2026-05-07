@@ -22,13 +22,13 @@ export function Newsletter() {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           {/* Content */}
-          <p className="text-sm font-sans tracking-[0.3em] uppercase text-muted-foreground mb-4">
+          <p className="text-caption text-muted-foreground mb-4 tracking-[0.3em]">
             Stay Connected
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
+          <h2 className="text-headline mb-6">
             Join the Inner Circle
           </h2>
-          <p className="text-lg font-sans text-muted-foreground mb-8">
+          <p className="text-body-lg text-muted-foreground mb-8">
             Be the first to discover new collections, exclusive offers, and receive 10% off your first purchase.
           </p>
 
@@ -38,7 +38,7 @@ export function Newsletter() {
               <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                 <Check className="h-5 w-5 text-primary" />
               </div>
-              <p className="font-sans text-foreground">
+              <p className="text-body text-foreground">
                 Thank you for subscribing! Check your email for a welcome gift.
               </p>
             </div>
@@ -50,12 +50,12 @@ export function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 h-12 font-sans bg-card"
+                className="flex-1 h-12 text-body bg-card"
               />
               <Button
                 type="submit"
                 size="lg"
-                className="group font-sans tracking-wider uppercase text-sm px-6"
+                className="group text-caption px-6"
               >
                 Subscribe
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -64,7 +64,7 @@ export function Newsletter() {
           )}
 
           {/* Trust badges */}
-          <div className="flex items-center justify-center gap-6 mt-8 text-xs font-sans text-muted-foreground">
+          <div className="flex items-center justify-center gap-6 mt-8 text-caption text-muted-foreground">
             <span>Free Shipping</span>
             <span className="w-1 h-1 bg-muted-foreground rounded-full" />
             <span>Secure Checkout</span>

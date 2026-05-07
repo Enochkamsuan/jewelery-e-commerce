@@ -18,23 +18,23 @@ export function Hero() {
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
-              <p className="text-sm font-sans tracking-[0.3em] uppercase text-muted-foreground">
+              <p className="text-caption text-muted-foreground tracking-[0.3em]">
                 The 2026 Collection
               </p>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-tight text-balance">
+              <h1 className="text-display text-balance">
                 Timeless elegance
-                <span className="block italic font-medium">meets modern craft</span>
-              </h2>
+                <span className="block italic">meets modern craft</span>
+              </h1>
             </div>
-            <p className="text-lg font-sans text-muted-foreground max-w-md mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-body-lg text-muted-foreground max-w-md mx-auto lg:mx-0">
               Discover our curated collection of handcrafted jewelry from the world&apos;s most talented artisans.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="group font-sans tracking-wider uppercase text-sm px-8 py-6">
+              <Button size="lg" className="group text-caption px-8 py-6">
                 Shop Now
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button variant="outline" size="lg" className="font-sans tracking-wider uppercase text-sm px-8 py-6">
+              <Button variant="outline" size="lg" className="text-caption px-8 py-6">
                 View Lookbook
               </Button>
             </div>

@@ -30,15 +30,15 @@ export function CustomJewelry() {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <p className="text-sm font-sans tracking-[0.3em] uppercase text-background/60">
+              <p className="text-caption text-background/60 tracking-[0.3em]">
                 Bespoke Service
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight">
+              <h2 className="text-headline text-background leading-tight">
                 Design Your Own
-                <span className="block italic font-medium">Masterpiece</span>
+                <span className="block italic">Masterpiece</span>
               </h2>
             </div>
-            <p className="text-lg font-sans text-background/70 leading-relaxed max-w-md">
+            <p className="text-body-lg text-background/70 max-w-md">
               Bring your vision to life with our custom jewelry design service. Work directly with our master craftsmen to create a piece that&apos;s uniquely yours.
             </p>
 

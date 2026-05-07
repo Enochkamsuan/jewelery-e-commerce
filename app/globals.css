@@ -75,8 +75,8 @@
 }
 
 @theme inline {
-  --font-sans: 'Cormorant Garamond', 'Georgia', serif;
-  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  --font-sans: 'DM Sans', 'system-ui', sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -120,7 +120,60 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-base leading-relaxed;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold tracking-tight;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl leading-tight;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+  h6 {
+    @apply text-base md:text-lg;
+  }
+  p {
+    @apply text-base leading-relaxed;
+  }
+  .text-display {
+    @apply font-serif text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-none;
+  }
+  .text-headline {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight;
+  }
+  .text-title {
+    @apply font-serif text-2xl md:text-3xl font-medium;
+  }
+  .text-subtitle {
+    @apply font-sans text-lg md:text-xl font-medium;
+  }
+  .text-body-lg {
+    @apply font-sans text-lg leading-relaxed;
+  }
+  .text-body {
+    @apply font-sans text-base leading-relaxed;
+  }
+  .text-body-sm {
+    @apply font-sans text-sm leading-relaxed;
+  }
+  .text-caption {
+    @apply font-sans text-xs tracking-wide uppercase;
   }
 }

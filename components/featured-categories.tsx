@@ -40,10 +40,10 @@ export function FeaturedCategories() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-sm font-sans tracking-[0.3em] uppercase text-muted-foreground mb-4">
+          <p className="text-caption text-muted-foreground mb-4 tracking-[0.3em]">
             Browse By Category
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light">
+          <h2 className="text-headline">
             Curated Collections
           </h2>
         </div>
@@ -57,12 +57,12 @@ export function FeaturedCategories() {
               className="group relative bg-secondary rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
             >
               <div className="text-5xl mb-6">{category.icon}</div>
-              <h3 className="text-xl font-medium mb-2">{category.name}</h3>
-              <p className="text-sm font-sans text-muted-foreground mb-4">
+              <h3 className="font-serif text-xl font-medium mb-2">{category.name}</h3>
+              <p className="text-body-sm text-muted-foreground mb-4">
                 {category.description}
               </p>
               <div className="flex items-center justify-between">
-                <span className="text-xs font-sans tracking-wider uppercase text-muted-foreground">
+                <span className="text-caption text-muted-foreground">
                   {category.itemCount} pieces
                 </span>
                 <ArrowRight className="h-4 w-4 text-primary transition-transform group-hover:translate-x-1" />

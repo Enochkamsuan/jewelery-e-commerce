@@ -57,10 +57,10 @@ export function Testimonials() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-sm font-sans tracking-[0.3em] uppercase text-muted-foreground mb-4">
+          <p className="text-caption text-muted-foreground mb-4 tracking-[0.3em]">
             Testimonials
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light">
+          <h2 className="text-headline">
             What Our Clients Say
           </h2>
         </div>
@@ -72,15 +72,15 @@ export function Testimonials() {
             <Quote className="h-12 w-12 text-primary/20 mb-8" />
 
             {/* Quote */}
-            <blockquote className="text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8">
+            <blockquote className="font-serif text-xl md:text-2xl lg:text-3xl font-light leading-relaxed mb-8">
               &ldquo;{current.quote}&rdquo;
             </blockquote>
 
             {/* Author */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <p className="font-medium text-lg">{current.author}</p>
-                <p className="text-sm font-sans text-muted-foreground">
+                <p className="font-serif text-lg font-medium">{current.author}</p>
+                <p className="text-body-sm text-muted-foreground">
                   {current.location} &middot; {current.product}
                 </p>
               </div>
@@ -96,7 +96,7 @@ export function Testimonials() {
                   <ChevronLeft className="h-4 w-4" />
                   <span className="sr-only">Previous testimonial</span>
                 </Button>
-                <span className="text-sm font-sans text-muted-foreground px-4">
+                <span className="text-body-sm text-muted-foreground px-4">
                   {currentIndex + 1} / {testimonials.length}
                 </span>
                 <Button

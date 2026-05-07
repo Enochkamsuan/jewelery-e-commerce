@@ -63,14 +63,14 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2">
             <Link href="/" className="inline-block mb-6">
-              <h2 className="text-2xl font-semibold tracking-wider">Lumière</h2>
+              <span className="font-serif text-2xl font-semibold tracking-wider">Lumiere</span>
             </Link>
-            <p className="text-sm font-sans text-background/60 mb-6 max-w-xs leading-relaxed">
+            <p className="text-body-sm text-background/60 mb-6 max-w-xs">
               Curating the world&apos;s finest jewelry from master artisans since 2015.
             </p>
             
             {/* Contact */}
-            <div className="space-y-3 text-sm font-sans text-background/60">
+            <div className="space-y-3 text-body-sm text-background/60">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
                 <span>hello@lumiere.com</span>
@@ -89,7 +89,7 @@ export function Footer() {
           {/* Links */}
           {Object.values(footerLinks).map((section) => (
             <div key={section.title}>
-              <h3 className="font-medium text-sm tracking-wider uppercase mb-4">
+              <h3 className="text-caption mb-4">
                 {section.title}
               </h3>
               <ul className="space-y-3">
@@ -97,7 +97,7 @@ export function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-sm font-sans text-background/60 hover:text-background transition-colors"
+                      className="text-body-sm text-background/60 hover:text-background transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -114,12 +114,12 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             {/* Copyright */}
-            <p className="text-xs font-sans text-background/40">
-              &copy; {new Date().getFullYear()} Lumière. All rights reserved.
+            <p className="text-caption text-background/40">
+              &copy; {new Date().getFullYear()} Lumiere. All rights reserved.
             </p>
 
             {/* Legal Links */}
-            <div className="flex items-center gap-6 text-xs font-sans text-background/40">
+            <div className="flex items-center gap-6 text-caption text-background/40">
               <Link href="/privacy" className="hover:text-background transition-colors">
                 Privacy Policy
               </Link>

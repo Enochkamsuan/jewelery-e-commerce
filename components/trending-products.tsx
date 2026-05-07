@@ -23,16 +23,16 @@ export function TrendingProducts() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
-            <p className="text-sm font-sans tracking-[0.3em] uppercase text-muted-foreground mb-4">
+            <p className="text-caption text-muted-foreground mb-4 tracking-[0.3em]">
               Most Loved
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light">
+            <h2 className="text-headline">
               Trending Now
             </h2>
           </div>
           <Link
             href="/category/rings"
-            className="text-sm font-sans tracking-wider uppercase hover:text-primary transition-colors"
+            className="text-caption hover:text-primary transition-colors"
           >
             View All Products
           </Link>
@@ -104,29 +104,29 @@ export function TrendingProducts() {
               {/* Content */}
               <Link href={`/products/${product.id}`}>
                 <div className="p-4">
-                  <p className="text-xs font-sans text-muted-foreground mb-1">
+                  <p className="text-body-sm text-muted-foreground mb-1">
                     {product.vendor}
                   </p>
-                  <h3 className="font-medium mb-2 line-clamp-1 group-hover:text-primary transition-colors">
+                  <h3 className="font-serif text-lg font-medium mb-2 line-clamp-1 group-hover:text-primary transition-colors">
                     {product.name}
                   </h3>
 
                   {/* Rating */}
                   <div className="flex items-center gap-1 mb-3">
                     <Star className="h-3 w-3 fill-primary text-primary" />
-                    <span className="text-xs font-sans">{product.rating}</span>
-                    <span className="text-xs font-sans text-muted-foreground">
+                    <span className="text-body-sm">{product.rating}</span>
+                    <span className="text-body-sm text-muted-foreground">
                       ({product.reviews})
                     </span>
                   </div>
 
                   {/* Price */}
                   <div className="flex items-center gap-2">
-                    <span className="font-medium">
+                    <span className="font-serif text-lg font-medium">
                       ${product.price.toLocaleString()}
                     </span>
                     {product.originalPrice && (
-                      <span className="text-sm font-sans text-muted-foreground line-through">
+                      <span className="text-body-sm text-muted-foreground line-through">
                         ${product.originalPrice.toLocaleString()}
                       </span>
                     )}
