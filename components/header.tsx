@@ -12,12 +12,12 @@ import {
 } from "@/components/ui/sheet"
 
 const categories = [
-  { name: "Rings", href: "/rings" },
-  { name: "Necklaces", href: "/necklaces" },
-  { name: "Bracelets", href: "/bracelets" },
-  { name: "Earrings", href: "/earrings" },
-  { name: "Watches", href: "/watches" },
-  { name: "Collections", href: "/collections" },
+  { name: "Rings", href: "/category/rings" },
+  { name: "Necklaces", href: "/category/necklaces" },
+  { name: "Bracelets", href: "/category/bracelets" },
+  { name: "Earrings", href: "/category/earrings" },
+  { name: "Custom", href: "/custom" },
+  { name: "Vendors", href: "/vendors" },
 ]
 
 export function Header() {

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles, Palette, Gem } from "lucide-react"
 
@@ -59,12 +60,15 @@ export function CustomJewelry() {
             </div>
 
             <Button
+              asChild
               size="lg"
               variant="secondary"
               className="group font-sans tracking-wider uppercase text-sm px-8 py-6"
             >
-              Start Designing
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Link href="/custom">
+                Start Designing
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
           </div>
 
