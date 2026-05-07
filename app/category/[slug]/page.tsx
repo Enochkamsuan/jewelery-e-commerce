@@ -97,7 +97,7 @@ export default function CategoryPage({ params }: { params: Promise<{ slug: strin
 
             <div className="flex items-center gap-4">
               <Select value={sortBy} onValueChange={setSortBy}>
-                <SelectTrigger className="w-[180px] font-sans">
+                <SelectTrigger className="w-45 font-sans">
                   <SelectValue placeholder="Sort by" />
                 </SelectTrigger>
                 <SelectContent>
@@ -184,7 +184,7 @@ export default function CategoryPage({ params }: { params: Promise<{ slug: strin
                   </Button>
 
                   {/* Quick Add */}
-                  <div className="absolute inset-x-3 bottom-[140px] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                  <div className="absolute inset-x-3 bottom-35 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                     <Button className="w-full font-sans text-xs tracking-wider uppercase">
                       <ShoppingBag className="h-4 w-4 mr-2" />
                       Quick Add
@@ -234,7 +234,7 @@ export default function CategoryPage({ params }: { params: Promise<{ slug: strin
                   href={`/products/${product.id}`}
                   className="flex gap-6 bg-card rounded-lg p-4 hover:shadow-lg transition-all"
                 >
-                  <div className="w-32 h-32 bg-secondary rounded-lg flex items-center justify-center text-4xl flex-shrink-0">
+                  <div className="w-32 h-32 bg-secondary rounded-lg flex items-center justify-center text-4xl shrink-0">
                     {product.icon}
                   </div>
                   <div className="flex-1">
