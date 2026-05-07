@@ -9,28 +9,28 @@ const categories = [
     description: "Statement pieces for every occasion",
     itemCount: 156,
     icon: "💍",
-    href: "/rings",
+    href: "/category/rings",
   },
   {
     name: "Necklaces",
     description: "Elegant chains and pendants",
     itemCount: 89,
     icon: "📿",
-    href: "/necklaces",
+    href: "/category/necklaces",
   },
   {
     name: "Bracelets",
     description: "Timeless wrist adornments",
     itemCount: 72,
     icon: "⌚",
-    href: "/bracelets",
+    href: "/category/bracelets",
   },
   {
     name: "Earrings",
     description: "From studs to chandeliers",
     itemCount: 124,
     icon: "✨",
-    href: "/earrings",
+    href: "/category/earrings",
   },
 ]
 

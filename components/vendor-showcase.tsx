@@ -132,9 +132,11 @@ export function VendorShowcase() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="outline" size="lg" className="group font-sans tracking-wider uppercase text-sm px-8 py-6">
-            View All Vendors
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          <Button asChild variant="outline" size="lg" className="group font-sans tracking-wider uppercase text-sm px-8 py-6">
+            <Link href="/vendors">
+              View All Vendors
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Link>
           </Button>
         </div>
       </div>
