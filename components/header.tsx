@@ -9,6 +9,8 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetTitle,
+  SheetHeader,
 } from "@/components/ui/sheet"
 
 const categories = [
@@ -25,7 +27,6 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
-      {/* Top bar */}
       <div className="border-b border-border/50">
         <div className="container mx-auto px-4 py-2">
           <p className="text-center text-xs tracking-widest text-muted-foreground font-sans uppercase">
@@ -33,8 +34,6 @@ export function Header() {
           </p>
         </div>
       </div>
-
-      {/* Main header */}
       <div className="border-b border-border/50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between gap-4">
@@ -46,8 +45,11 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
+              <SheetHeader>
+                <SheetTitle>Menu</SheetTitle>
+              </SheetHeader>
               <SheetContent side="left" className="w-80">
-                <nav className="mt-8 flex flex-col gap-4">
+                <nav className="mt-8 flex flex-col gap-4 pl-3">
                   {categories.map((category) => (
                     <Link
                       key={category.name}
