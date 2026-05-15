@@ -43,7 +43,7 @@ export function Newsletter() {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto">
               <Input
                 type="email"
                 placeholder="Enter your email"

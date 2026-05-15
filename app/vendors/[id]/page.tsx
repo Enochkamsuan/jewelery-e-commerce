@@ -46,7 +46,7 @@ export default function VendorPage({ params }: { params: Promise<{ id: string }>
     <div className="min-h-screen bg-background">
       <Header />
       
-      <main className="pt-32 pb-20">
+      <main className="pt-10 pb-20">
         <div className="container mx-auto px-4">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm font-sans text-muted-foreground mb-8">
@@ -61,7 +61,7 @@ export default function VendorPage({ params }: { params: Promise<{ id: string }>
           <div className="bg-card rounded-2xl p-8 md:p-12 mb-12">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               {/* Vendor Avatar */}
-              <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-secondary flex items-center justify-center text-5xl md:text-6xl flex-shrink-0">
+              <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-secondary flex items-center justify-center text-5xl md:text-6xl shrink-0">
                 {vendor.icon}
               </div>
 
@@ -195,7 +195,7 @@ export default function VendorPage({ params }: { params: Promise<{ id: string }>
                       </Button>
 
                       {/* Quick Add */}
-                      <div className="absolute inset-x-3 bottom-[140px] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                      <div className="absolute inset-x-3 bottom-35 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                         <Button className="w-full font-sans text-xs tracking-wider uppercase">
                           <ShoppingBag className="h-4 w-4 mr-2" />
                           Quick Add

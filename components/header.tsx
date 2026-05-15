@@ -1,17 +1,11 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Search, User, Heart, ShoppingBag, Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetTitle,
-  SheetHeader,
-} from "@/components/ui/sheet"
+import { useState } from "react";
+import Link from "next/link";
+import { Search, User, Heart, ShoppingBag, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const categories = [
   { name: "Rings", href: "/category/rings" },
@@ -20,10 +14,10 @@ const categories = [
   { name: "Earrings", href: "/category/earrings" },
   { name: "Custom", href: "/custom" },
   { name: "Vendors", href: "/vendors" },
-]
+];
 
 export function Header() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
@@ -45,9 +39,6 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetHeader>
-                <SheetTitle>Menu</SheetTitle>
-              </SheetHeader>
               <SheetContent side="left" className="w-80">
                 <nav className="mt-8 flex flex-col gap-4 pl-3">
                   {categories.map((category) => (
@@ -60,10 +51,16 @@ export function Header() {
                     </Link>
                   ))}
                   <div className="mt-8 pt-8 border-t border-border">
-                    <Link href="/login" className="block py-2 text-sm font-sans tracking-wide hover:text-primary">
+                    <Link
+                      href="/login"
+                      className="block py-2 text-sm font-sans tracking-wide hover:text-primary"
+                    >
                       Sign In
                     </Link>
-                    <Link href="/register" className="block py-2 text-sm font-sans tracking-wide hover:text-primary">
+                    <Link
+                      href="/register"
+                      className="block py-2 text-sm font-sans tracking-wide hover:text-primary"
+                    >
                       Create Account
                     </Link>
                   </div>
@@ -152,5 +149,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
